@@ -46,7 +46,7 @@ CLONE_TERMS = [
     '"repeated code"',
     '"extract method"',
     '"extract function"',
-    '"DRY principle"',
+    '"DRY"',
     '"avoid duplication"',
 ]
 
