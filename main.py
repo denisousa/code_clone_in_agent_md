@@ -47,6 +47,7 @@ CSV_SOURCES: dict[str, str] = {
 RESULTS_DIR   = Path("ai_config_results")
 REPORT_PATH   = RESULTS_DIR / "clone_terms_report.json"
 ANALYSIS_PATH = RESULTS_DIR / "clone_terms_analysis.json"
+FAILED_PATH   = RESULTS_DIR / "clone_terms_failed.json"
 
 CLONE_TERMS: list[str] = [
     '"duplicate code"',
@@ -92,6 +93,14 @@ class MatchResult(NamedTuple):
     record: FileRecord
     hits: list[TermHit]
     total_matches: int
+
+
+class FailedRecord(NamedTuple):
+    csv: str
+    repo_name: str
+    file_path: str
+    raw_url: str
+    reason: str  # "no_github_link" | "fetch_error"
 
 
 # ---------------------------------------------------------------------------
@@ -254,11 +263,19 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
     print(f"  Processable records: {len(records)}")
 
     results: list[MatchResult] = []
+    failed: list[FailedRecord] = []
 
     for i, record in enumerate(records, start=1):
         raw_url = github_link_to_raw_url(record.github_link, record.commit_sha)
         if not raw_url:
             print(f"  [{i}/{len(records)}] SKIP (no github_link): {record.file_path}")
+            failed.append(FailedRecord(
+                csv=csv_name,
+                repo_name=record.repo_name,
+                file_path=record.file_path,
+                raw_url="",
+                reason="no_github_link",
+            ))
             continue
 
         print(f"  [{i}/{len(records)}] {record.repo_name} / {record.file_path}")
@@ -266,6 +283,13 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
         content = fetch_raw_content(raw_url, headers)
         if content is None:
             print(f"    → Could not fetch content.")
+            failed.append(FailedRecord(
+                csv=csv_name,
+                repo_name=record.repo_name,
+                file_path=record.file_path,
+                raw_url=raw_url,
+                reason="fetch_error",
+            ))
             time.sleep(DELAY_BETWEEN_REQUESTS)
             continue
 
@@ -282,6 +306,7 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
         "total_records": len(rows),
         "total_md_records": len(records),
         "results": results,
+        "failed": failed,
     }
 
 
@@ -345,6 +370,32 @@ def save_report(csv_data: list[dict], report_path: Path) -> None:
 
     report_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n[SAVED] Detailed report → {report_path}")
+
+
+# ---------------------------------------------------------------------------
+# Step 8b – Save clone_terms_failed.json
+# ---------------------------------------------------------------------------
+
+def save_failed_report(csv_data: list[dict], failed_path: Path) -> None:
+    """Write all entries that could not be fetched to a dedicated JSON file."""
+    all_failed: list[dict] = []
+    for entry in csv_data:
+        for f in entry.get("failed", []):
+            all_failed.append({
+                "csv":       f.csv,
+                "repo_name": f.repo_name,
+                "file_path": f.file_path,
+                "raw_url":   f.raw_url,
+                "reason":    f.reason,
+            })
+
+    output = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "total_failed": len(all_failed),
+        "failed": all_failed,
+    }
+    failed_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[SAVED] Failed URLs report  → {failed_path}  ({len(all_failed)} entries)")
 
 
 # ---------------------------------------------------------------------------
@@ -468,6 +519,7 @@ def main() -> None:
     print("  Saving output files ...")
     print(f"{'='*60}")
     save_report(csv_data, REPORT_PATH)
+    save_failed_report(csv_data, FAILED_PATH)
     save_analysis(csv_data, ANALYSIS_PATH)
 
     elapsed = perf_counter() - start
