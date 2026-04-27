@@ -48,6 +48,7 @@ CLONE_TERMS = [
     '"extract function"',
     '"DRY"',
     '"avoid duplication"',
+    '"similar code"',
 ]
 
 # Case-insensitive regex built from all terms (quotes stripped – used to

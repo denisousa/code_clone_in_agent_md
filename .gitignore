@@ -1,5 +1,6 @@
 # My ignore file for Python projects
 .env-example
+ai_config/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
