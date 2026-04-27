@@ -21,6 +21,7 @@ import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from time import perf_counter
 from typing import NamedTuple
 
 import requests
@@ -35,7 +36,6 @@ load_dotenv()
 AI_CONFIG_DIR = Path("ai_config")
 
 # Maps each CSV filename to the column that holds the file path.
-# CSVs without a file-path column (commits.csv, repos.csv) are omitted.
 CSV_SOURCES: dict[str, str] = {
     "commands.csv":      "command",
     "context_files.csv": "context_file",
@@ -66,6 +66,7 @@ CLEAN_TERMS: list[str] = [t.strip('"') for t in CLONE_TERMS]
 
 SNIPPET_CONTEXT = 80        # characters of context around each match
 DELAY_BETWEEN_REQUESTS = 1  # seconds between GitHub API calls
+MAX_RECORDS_PER_CSV = 30    # set to None to process all records
 
 
 # ---------------------------------------------------------------------------
@@ -78,6 +79,7 @@ class FileRecord(NamedTuple):
     github_link: str
     name: str
     language: str
+    commit_sha: str
 
 
 class TermHit(NamedTuple):
@@ -111,40 +113,47 @@ def load_csv(csv_path: Path) -> list[dict]:
 # Step 2 – Filter .md records
 # ---------------------------------------------------------------------------
 
-def filter_md_records(rows: list[dict], file_col: str) -> list[FileRecord]:
-    """Keep only rows whose file path (given column) ends with .md."""
-    md_records: list[FileRecord] = []
+def filter_records(rows: list[dict], file_col: str) -> list[FileRecord]:
+    """Keep rows whose file-path column is non-empty (any extension)."""
+    records: list[FileRecord] = []
     for row in rows:
         file_path: str = row.get(file_col, "").strip()
-        if file_path.lower().endswith(".md"):
-            md_records.append(
+        if file_path:
+            records.append(
                 FileRecord(
                     repo_name=row.get("repo_name", "").strip(),
                     file_path=file_path,
                     github_link=row.get("github_link", "").strip(),
                     name=row.get("name", "").strip(),
                     language=row.get("language", "").strip(),
+                    commit_sha=row.get("last_commit_sha", "").strip(),
                 )
             )
-    return md_records
+    return records
 
 
 # ---------------------------------------------------------------------------
 # Step 3 – Convert github_link to raw content URL
 # ---------------------------------------------------------------------------
 
-def github_link_to_raw_url(github_link: str) -> str | None:
+def github_link_to_raw_url(github_link: str, commit_sha: str = "") -> str | None:
     """
     Convert a GitHub tree URL to a raw.githubusercontent.com URL.
 
-    Example:
+    When commit_sha is provided the branch segment is replaced with the SHA,
+    producing a stable, immutable URL:
       https://github.com/owner/repo/tree/branch/path/to/file.md
-      → https://raw.githubusercontent.com/owner/repo/branch/path/to/file.md
+      → https://raw.githubusercontent.com/owner/repo/{sha}/path/to/file.md
+
+    Without a SHA the branch name is kept as-is (fallback).
     """
     if not github_link:
         return None
     raw = github_link.replace("https://github.com/", "https://raw.githubusercontent.com/")
-    raw = re.sub(r"/tree/", "/", raw, count=1)
+    if commit_sha:
+        raw = re.sub(r"/tree/[^/]+/", f"/{commit_sha}/", raw, count=1)
+    else:
+        raw = re.sub(r"/tree/", "/", raw, count=1)
     return raw
 
 
@@ -239,18 +248,20 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
     rows = load_csv(csv_path)
     print(f"  Total records: {len(rows)}")
 
-    md_records = filter_md_records(rows, file_col)
-    print(f"  .md records:   {len(md_records)}")
+    records = filter_records(rows, file_col)
+    if MAX_RECORDS_PER_CSV is not None:
+        records = records[:MAX_RECORDS_PER_CSV]
+    print(f"  Processable records: {len(records)}")
 
     results: list[MatchResult] = []
 
-    for i, record in enumerate(md_records, start=1):
-        raw_url = github_link_to_raw_url(record.github_link)
+    for i, record in enumerate(records, start=1):
+        raw_url = github_link_to_raw_url(record.github_link, record.commit_sha)
         if not raw_url:
-            print(f"  [{i}/{len(md_records)}] SKIP (no github_link): {record.file_path}")
+            print(f"  [{i}/{len(records)}] SKIP (no github_link): {record.file_path}")
             continue
 
-        print(f"  [{i}/{len(md_records)}] {record.repo_name} / {record.file_path}")
+        print(f"  [{i}/{len(records)}] {record.repo_name} / {record.file_path}")
 
         content = fetch_raw_content(raw_url, headers)
         if content is None:
@@ -269,7 +280,7 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
     return {
         "csv": csv_name,
         "total_records": len(rows),
-        "total_md_records": len(md_records),
+        "total_md_records": len(records),
         "results": results,
     }
 
@@ -391,10 +402,59 @@ def save_analysis(csv_data: list[dict], analysis_path: Path) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Startup report
+# ---------------------------------------------------------------------------
+
+def print_startup_report() -> int:
+    """
+    Print a pre-run summary: .md entry count per CSV and total,
+    plus an estimated runtime at 1 s/entry.
+    Returns the total number of entries to be processed.
+    """
+    col_width = max(len(name) for name in CSV_SOURCES) + 2
+    rows_data: list[tuple[str, int]] = []
+
+    for csv_name, file_col in CSV_SOURCES.items():
+        csv_path = AI_CONFIG_DIR / csv_name
+        rows = load_csv(csv_path)
+        count = sum(
+            1 for row in rows
+            if row.get(file_col, "").strip()
+        )
+        if MAX_RECORDS_PER_CSV is not None:
+            count = min(count, MAX_RECORDS_PER_CSV)
+        rows_data.append((csv_name, count))
+
+    total = sum(count for _, count in rows_data)
+    minutes, seconds = divmod(total * DELAY_BETWEEN_REQUESTS, 60)
+
+    print("=" * 60)
+    print("  Pre-run summary")
+    print("=" * 60)
+    print(f"  {'CSV file':<{col_width}}  {'Entries':>14}")
+    print(f"  {'-'*col_width}  {'-'*14}")
+    for csv_name, count in rows_data:
+        print(f"  {csv_name:<{col_width}}  {count:>14,}")
+    print(f"  {'-'*col_width}  {'-'*14}")
+    print(f"  {'TOTAL':<{col_width}}  {total:>14,}")
+    print()
+    if minutes:
+        print(f"  Estimated runtime: ~{int(minutes)}m {int(seconds)}s  ({total} entries × {DELAY_BETWEEN_REQUESTS}s)")
+    else:
+        print(f"  Estimated runtime: ~{int(seconds)}s  ({total} entries × {DELAY_BETWEEN_REQUESTS}s)")
+    print("=" * 60)
+    return total
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    start = perf_counter()
+
+    print_startup_report()
+
     headers = build_headers()
 
     RESULTS_DIR.mkdir(exist_ok=True)
@@ -409,6 +469,15 @@ def main() -> None:
     print(f"{'='*60}")
     save_report(csv_data, REPORT_PATH)
     save_analysis(csv_data, ANALYSIS_PATH)
+
+    elapsed = perf_counter() - start
+    elapsed_min, elapsed_sec = divmod(elapsed, 60)
+    print(f"\n{'='*60}")
+    if elapsed_min:
+        print(f"  Total runtime: {int(elapsed_min)}m {elapsed_sec:.1f}s")
+    else:
+        print(f"  Total runtime: {elapsed_sec:.1f}s")
+    print(f"{'='*60}")
 
 
 if __name__ == "__main__":
