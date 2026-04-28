@@ -67,7 +67,6 @@ CLEAN_TERMS: list[str] = [t.strip('"') for t in CLONE_TERMS]
 
 SNIPPET_CONTEXT = 80        # characters of context around each match
 DELAY_BETWEEN_REQUESTS = 1  # seconds between GitHub API calls
-MAX_RECORDS_PER_CSV = 30    # set to None to process all records
 
 
 # ---------------------------------------------------------------------------
@@ -258,8 +257,6 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
     print(f"  Total records: {len(rows)}")
 
     records = filter_records(rows, file_col)
-    if MAX_RECORDS_PER_CSV is not None:
-        records = records[:MAX_RECORDS_PER_CSV]
     print(f"  Processable records: {len(records)}")
 
     results: list[MatchResult] = []
@@ -472,8 +469,6 @@ def print_startup_report() -> int:
             1 for row in rows
             if row.get(file_col, "").strip()
         )
-        if MAX_RECORDS_PER_CSV is not None:
-            count = min(count, MAX_RECORDS_PER_CSV)
         rows_data.append((csv_name, count))
 
     total = sum(count for _, count in rows_data)
