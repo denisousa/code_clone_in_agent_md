@@ -11,6 +11,11 @@ evolution in open-source projects.
 
 **AI-Config Dataset** — [https://se-uhd.de/ai-config-dataset/#dashboard](https://se-uhd.de/ai-config-dataset/#dashboard)
 
+The accompanying paper has been accepted at **AIWare 2026**:
+> **A Dataset of Agentic AI Coding Tool Configurations**
+> [https://2026.aiwareconf.org/track/aiware-2026-benchmark---dataset-track](https://2026.aiwareconf.org/track/aiware-2026-benchmark---dataset-track)
+
+
 The dataset provides structured CSV exports of agent configuration files collected
 from public GitHub repositories, covering commands, context files, MCP configs,
 skills, and subagents.
@@ -21,8 +26,8 @@ skills, and subagents.
 
 | Title | Notes |
 |---|---|
-| **Configuring Agentic AI Coding Tools: An Exploratory Study** | Full paper by Sebastian et al. Direct source of the AI-Config dataset used here. Zenodo: [10.5281/zenodo.19696190](https://zenodo.org/records/19696190) · arXiv: [2510.21413](https://arxiv.org/abs/2510.21413) |
-| **Context Engineering for AI Agents in Open-Source Software** | Earlier work by the same author. Related but independent from the AI-Config dataset. |
+| **Configuring Agentic AI Coding Tools: An Exploratory Study** | Primary paper by Sebastian Baltes et al. and the direct source of the AI-Config dataset used here. Zenodo: [10.5281/zenodo.19696190](https://zenodo.org/records/19696190) · arXiv: [2510.21413](https://arxiv.org/abs/2510.21413) |
+| **Context Engineering for AI Agents in Open-Source Software** | A related study by Sebastian Baltes, presented at the **MSR** (Mining Software Repositories) conference. Independent from the AI-Config dataset but part of the same broader research line on agentic AI coding tools. |
 
 ---
 

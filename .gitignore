@@ -2,6 +2,7 @@
 .env-example
 ai_config/
 ai_config_results
+analyse_example.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -50,20 +50,29 @@ ANALYSIS_PATH = RESULTS_DIR / "clone_terms_analysis.json"
 FAILED_PATH   = RESULTS_DIR / "clone_terms_failed.json"
 
 CLONE_TERMS: list[str] = [
-    '"duplicate code"',
-    '"duplicated code"',
-    '"code duplication"',
-    '"code redundancy"',
-    '"duplicated logic"',
-    '"copy-paste"',
-    '"copy-pasted"',
-    '"repeated code"',
-    '"DRY principle"',
-    '"avoid duplication"',
+    "duplicate code",
+    "duplicated code",
+    "code duplication",
+    "code redundancy",
+    "logic duplication",    
+    "duplicated logic",
+    "copy-paste",
+    "copy-pasted",
+    "repeated code",
+    "DRY principle",
+    "avoid duplication",
+    "reused code",
+    "code reuse",
+    "code sharing",
+    "code clone",
+    "code cloning",
+    "library reuse",
+    "API reuse"
 ]
 
-# Strip surrounding quotes for regex matching and display
-CLEAN_TERMS: list[str] = [t.strip('"') for t in CLONE_TERMS]
+# Adicionar resue and code reused
+
+CLEAN_TERMS: list[str] = CLONE_TERMS
 
 SNIPPET_CONTEXT = 80        # characters of context around each match
 DELAY_BETWEEN_REQUESTS = 1  # seconds between GitHub API calls
@@ -80,6 +89,12 @@ class FileRecord(NamedTuple):
     name: str
     language: str
     commit_sha: str
+    timestamp: str
+    branch: str
+    created_at: str
+    num_commits: str
+    is_empty: str
+    first_commit_sha: str
 
 
 class TermHit(NamedTuple):
@@ -92,6 +107,7 @@ class MatchResult(NamedTuple):
     record: FileRecord
     hits: list[TermHit]
     total_matches: int
+    raw_url: str
 
 
 class FailedRecord(NamedTuple):
@@ -135,6 +151,12 @@ def filter_records(rows: list[dict], file_col: str) -> list[FileRecord]:
                     name=row.get("name", "").strip(),
                     language=row.get("language", "").strip(),
                     commit_sha=row.get("last_commit_sha", "").strip(),
+                    timestamp=row.get("timestamp", "").strip(),
+                    branch=row.get("branch", "").strip(),
+                    created_at=row.get("created_at", "").strip(),
+                    num_commits=row.get("#commits", "").strip(),
+                    is_empty=row.get("is_empty", "").strip(),
+                    first_commit_sha=row.get("first_commit_sha", "").strip(),
                 )
             )
     return records
@@ -293,7 +315,7 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
         hits = apply_regex(content)
         if hits:
             total = sum(h.count for h in hits)
-            results.append(MatchResult(record=record, hits=hits, total_matches=total))
+            results.append(MatchResult(record=record, hits=hits, total_matches=total, raw_url=raw_url))
             print(f"    → {len(hits)} term(s) matched, {total} total occurrence(s).")
 
         time.sleep(DELAY_BETWEEN_REQUESTS)
@@ -348,6 +370,14 @@ def save_report(csv_data: list[dict], report_path: Path) -> None:
                         "file_name": Path(r.record.file_path).name,
                         "file_path": r.record.file_path,
                         "github_link": r.record.github_link,
+                        "raw_url": r.raw_url,
+                        "timestamp": r.record.timestamp,
+                        "branch": r.record.branch,
+                        "created_at": r.record.created_at,
+                        "#commits": r.record.num_commits,
+                        "is_empty": r.record.is_empty,
+                        "first_commit_sha": r.record.first_commit_sha,
+                        "last_commit_sha": r.record.commit_sha,
                         "total_occurrences": r.total_matches,
                         "terms": [
                             {
