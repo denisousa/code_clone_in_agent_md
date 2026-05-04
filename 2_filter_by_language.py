@@ -130,6 +130,19 @@ def main() -> None:
     print(f"Skipped: {len(skipped_repos)}")
 
     # ----- Build filtered report (same structure) -----
+    # Pass 1: collect all matches per repo to find the earliest created_at
+    repo_earliest: dict[str, str] = {}
+    for source in report.get("sources", []):
+        for m in source.get("matches", []):
+            if m["repo_name"] not in kept_repos:
+                continue
+            ca = m.get("created_at", "")
+            if ca:
+                if m["repo_name"] not in repo_earliest or ca < repo_earliest[m["repo_name"]]:
+                    repo_earliest[m["repo_name"]] = ca
+
+    # Pass 2: build filtered sources, overwriting created_at with the earliest
+    # date for that repo and preserving the original in file_created_at
     filtered_sources = []
     for source in report.get("sources", []):
         filtered_matches = []
@@ -137,7 +150,13 @@ def main() -> None:
             if m["repo_name"] not in kept_repos:
                 continue
             lang = repo_languages[m["repo_name"]]
-            enriched = {**m, "language": lang, "nicad_language": SUPPORTED_LANGUAGES[lang]}
+            enriched = {
+                **m,
+                "file_created_at": m.get("created_at", ""),
+                "created_at": repo_earliest.get(m["repo_name"], m.get("created_at", "")),
+                "language": lang,
+                "nicad_language": SUPPORTED_LANGUAGES[lang],
+            }
             filtered_matches.append(enriched)
         filtered_source = {**source}
         filtered_source["matches"] = filtered_matches

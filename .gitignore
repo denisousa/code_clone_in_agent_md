@@ -4,6 +4,9 @@ ai_config/
 ai_config_results
 analyse_example.json
 results/
+omniccg/cloned_repositories/
+ai/
+genealogy_results/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
