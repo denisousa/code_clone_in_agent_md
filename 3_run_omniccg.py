@@ -32,7 +32,6 @@ from omniccg.core import analyze_clone_genealogy
 REPORT_PATH = Path("ai_config_results/clone_terms_report_filtered.json")
 OUTPUT_ROOT = Path("results/omniccg")
 FINAL_REPORT = OUTPUT_ROOT / "execution_report.json"
-PROGRESS_FILE = OUTPUT_ROOT / "progress.json"
 
 GITHUB_BASE = "https://github.com"
 NOW = datetime.now(timezone.utc)
@@ -45,14 +44,6 @@ OMNICCG_OUTPUTS = ["ccg_data.xml", "ccg_metrics.xml"]
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
-
-def load_progress() -> dict:
-    """Load completed repos from the progress file."""
-    if PROGRESS_FILE.exists():
-        with open(PROGRESS_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    return {}
-
 
 def get_completed_from_genealogy() -> set[str]:
     """
@@ -67,11 +58,38 @@ def get_completed_from_genealogy() -> set[str]:
     }
 
 
-def save_progress(progress: dict) -> None:
-    """Persist the progress file after each repo."""
-    PROGRESS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(PROGRESS_FILE, "w", encoding="utf-8") as f:
-        json.dump(progress, f, indent=2, ensure_ascii=False)
+def get_last_genealogy_key() -> str | None:
+    """
+    Find the most recently created XML file in genealogy_results/
+    and return its stem (genealogy_key), e.g., 'py_user_repo'.
+    Returns None if no XML files exist.
+    """
+    if not GENEALOGY_RESULTS.exists():
+        return None
+    
+    xml_files = list(GENEALOGY_RESULTS.glob("*.xml"))
+    if not xml_files:
+        return None
+    
+    # Get the file with the most recent modification time
+    latest_file = max(xml_files, key=lambda p: p.stat().st_mtime)
+    return latest_file.stem
+
+
+def find_resume_index(repos_list: list[str], last_genealogy_key: str) -> int:
+    """
+    Given a list of repo names and the last genealogy_key processed,
+    find the index to resume from (the next unprocessed repo).
+    Returns the starting index for iteration.
+    """
+    for i, repo_name in enumerate(repos_list):
+        folder_name = repo_to_folder(repo_name)
+        # Find the language for this repo to build the full genealogy_key
+        # We'll check this in main and pass language info if needed
+        # For now, return index of the last processed repo + 1
+        if last_genealogy_key.endswith(folder_name):
+            return i + 1
+    return 0
 
 
 def repo_to_folder(repo_name: str) -> str:
@@ -318,18 +336,38 @@ def main() -> None:
         sys.exit(1)
 
     repos = collect_repos(REPORT_PATH)
+    repos_list = list(repos.keys())
     total = len(repos)
-    progress = load_progress()
     genealogy_done = get_completed_from_genealogy()
+    last_genealogy_key = get_last_genealogy_key()
 
     print(f"Total repositories       : {total}")
-    print(f"In progress.json         : {len(progress)}")
     print(f"In genealogy_results/    : {len(genealogy_done)}")
+    if last_genealogy_key:
+        print(f"Last genealogy generated : {last_genealogy_key}")
     print()
+
+    # Determine resume point: skip to the repo after the last processed one
+    start_index = 0
+    if last_genealogy_key:
+        # Find the resume point based on the last genealogy key
+        for idx, repo_name in enumerate(repos_list):
+            folder_name = repo_to_folder(repo_name)
+            genealogy_key = f"{repos[repo_name]['nicad_language']}_{folder_name}"
+            if genealogy_key == last_genealogy_key:
+                start_index = idx + 1
+                if start_index < total:
+                    print(f"Resuming from repo #{start_index + 1}: {repos_list[start_index]}")
+                else:
+                    print("All repositories already processed!")
+                print()
+                break
 
     results: list[dict] = []
 
-    for i, repo_name in enumerate(repos, start=1):
+    for idx in range(start_index, total):
+        i = idx + 1
+        repo_name = repos_list[idx]
         meta = repos[repo_name]
         nicad_language = meta["nicad_language"]
         folder_name = repo_to_folder(repo_name)
@@ -338,7 +376,7 @@ def main() -> None:
 
         # Resume: skip repos that already have a result in genealogy_results/
         if genealogy_key in genealogy_done:
-            entry = progress.get(repo_name) or {
+            entry = {
                 "repo_name": repo_name,
                 "command": None,
                 "days": None,
@@ -349,16 +387,7 @@ def main() -> None:
                 "files_generated": [f"{genealogy_key}.xml"],
             }
             results.append(entry)
-            if repo_name not in progress or progress[repo_name].get("status") != "success":
-                progress[repo_name] = entry
-                save_progress(progress)
             print(f"[{i:3d}/{total}] {repo_name} — found in genealogy_results/, skipping.")
-            continue
-
-        # Resume: skip repos already completed successfully in progress.json
-        if repo_name in progress and progress[repo_name]["status"] in ("success", "skipped"):
-            print(f"[{i:3d}/{total}] {repo_name} — already done ({progress[repo_name]['status']}), skipping.")
-            results.append(progress[repo_name])
             continue
 
         if not meta["earliest_created_at"]:
@@ -377,8 +406,6 @@ def main() -> None:
                 "files_generated": [],
             }
             results.append(entry)
-            progress[repo_name] = entry
-            save_progress(progress)
             continue
 
         days = build_days_list(meta["earliest_created_at"])
@@ -391,15 +418,8 @@ def main() -> None:
             f"          output_dir          : {output_dir}"
         )
 
-        # Mark as in_progress before running; if the script is interrupted,
-        # the repo will be re-executed on the next run.
-        progress[repo_name] = {"repo_name": repo_name, "status": "in_progress"}
-        save_progress(progress)
-
         result = process_repo(repo_name, days, nicad_language, output_dir)
         results.append(result)
-        progress[repo_name] = result
-        save_progress(progress)
 
         status_icon = {"success": "✓", "partial": "~", "failed": "✗"}.get(
             result["status"], "!"

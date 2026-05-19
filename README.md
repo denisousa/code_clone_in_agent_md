@@ -52,8 +52,21 @@ For each configuration file that mentions clone-related terms, the analysis cove
 ---
 
 ## Methodology
+Questão de Pesquisa:
+1. Até que ponto os agentes são configurados a evitar duplicação de código?
+- Metodologia: Verifiar o conteúdo desses arquivos que citam clonagem e o que eles estão configurando
+
+2. Até que ponto os agentes melhoraram suas capacidades em detectar clones durante o code review?
+- Metodologia:  
+
+3. Os pssaram a detectar melhor o código duplicados após a adoção do arquivo?
+- Metodologia:
+
 
 1. Collect all repositories that have an agent configuration file mentioning code-duplication terms.
+2. Analisar os arquivos XML e verificar o que é solicitado ao agente
+3. Pegar
+
 2. Compute the full clone genealogy of the collected projects.
 3. Identify whether a merged pull request (merged commit) was authored by a human or an agent.
 4. Calculate clone density for each merged commit.
