@@ -1,0 +1,275 @@
+{
+  "generated_at": "2026-04-30T07:38:21.567205+00:00",
+  "global_summary": {
+    "total_records_across_all_csvs": 14041,
+    "total_md_files_across_all_csvs": 14041,
+    "total_md_files_with_match": 417,
+    "top_terms_globally": [
+      {
+        "term": "code duplication",
+        "files": 130
+      },
+      {
+        "term": "copy-paste",
+        "files": 123
+      },
+      {
+        "term": "avoid duplication",
+        "files": 83
+      },
+      {
+        "term": "DRY principle",
+        "files": 35
+      },
+      {
+        "term": "duplicate code",
+        "files": 30
+      },
+      {
+        "term": "code reuse",
+        "files": 30
+      },
+      {
+        "term": "duplicated code",
+        "files": 18
+      },
+      {
+        "term": "duplicated logic",
+        "files": 18
+      },
+      {
+        "term": "copy-pasted",
+        "files": 13
+      },
+      {
+        "term": "code sharing",
+        "files": 4
+      },
+      {
+        "term": "logic duplication",
+        "files": 3
+      },
+      {
+        "term": "repeated code",
+        "files": 3
+      },
+      {
+        "term": "reused code",
+        "files": 2
+      }
+    ]
+  },
+  "per_csv": [
+    {
+      "csv": "commands.csv",
+      "total_records_in_csv": 1098,
+      "total_md_files": 1098,
+      "md_files_with_match": 29,
+      "top_terms": [
+        {
+          "term": "code duplication",
+          "files": 11
+        },
+        {
+          "term": "copy-paste",
+          "files": 10
+        },
+        {
+          "term": "avoid duplication",
+          "files": 7
+        },
+        {
+          "term": "duplicated code",
+          "files": 3
+        },
+        {
+          "term": "duplicate code",
+          "files": 2
+        },
+        {
+          "term": "duplicated logic",
+          "files": 1
+        },
+        {
+          "term": "copy-pasted",
+          "files": 1
+        },
+        {
+          "term": "code reuse",
+          "files": 1
+        }
+      ]
+    },
+    {
+      "csv": "context_files.csv",
+      "total_records_in_csv": 9491,
+      "total_md_files": 9491,
+      "md_files_with_match": 276,
+      "top_terms": [
+        {
+          "term": "code duplication",
+          "files": 100
+        },
+        {
+          "term": "avoid duplication",
+          "files": 64
+        },
+        {
+          "term": "copy-paste",
+          "files": 51
+        },
+        {
+          "term": "DRY principle",
+          "files": 27
+        },
+        {
+          "term": "code reuse",
+          "files": 24
+        },
+        {
+          "term": "duplicate code",
+          "files": 19
+        },
+        {
+          "term": "duplicated logic",
+          "files": 9
+        },
+        {
+          "term": "duplicated code",
+          "files": 4
+        },
+        {
+          "term": "logic duplication",
+          "files": 2
+        },
+        {
+          "term": "copy-pasted",
+          "files": 2
+        },
+        {
+          "term": "repeated code",
+          "files": 2
+        },
+        {
+          "term": "reused code",
+          "files": 2
+        },
+        {
+          "term": "code sharing",
+          "files": 2
+        }
+      ]
+    },
+    {
+      "csv": "mcp.csv",
+      "total_records_in_csv": 138,
+      "total_md_files": 138,
+      "md_files_with_match": 0,
+      "top_terms": []
+    },
+    {
+      "csv": "skills.csv",
+      "total_records_in_csv": 2430,
+      "total_md_files": 2430,
+      "md_files_with_match": 69,
+      "top_terms": [
+        {
+          "term": "copy-paste",
+          "files": 43
+        },
+        {
+          "term": "code duplication",
+          "files": 9
+        },
+        {
+          "term": "avoid duplication",
+          "files": 9
+        },
+        {
+          "term": "duplicated code",
+          "files": 8
+        },
+        {
+          "term": "copy-pasted",
+          "files": 7
+        },
+        {
+          "term": "duplicate code",
+          "files": 6
+        },
+        {
+          "term": "duplicated logic",
+          "files": 6
+        },
+        {
+          "term": "DRY principle",
+          "files": 4
+        },
+        {
+          "term": "code reuse",
+          "files": 3
+        },
+        {
+          "term": "logic duplication",
+          "files": 1
+        },
+        {
+          "term": "code sharing",
+          "files": 1
+        }
+      ]
+    },
+    {
+      "csv": "subagents.csv",
+      "total_records_in_csv": 884,
+      "total_md_files": 884,
+      "md_files_with_match": 43,
+      "top_terms": [
+        {
+          "term": "copy-paste",
+          "files": 19
+        },
+        {
+          "term": "code duplication",
+          "files": 10
+        },
+        {
+          "term": "DRY principle",
+          "files": 4
+        },
+        {
+          "term": "duplicate code",
+          "files": 3
+        },
+        {
+          "term": "duplicated code",
+          "files": 3
+        },
+        {
+          "term": "copy-pasted",
+          "files": 3
+        },
+        {
+          "term": "avoid duplication",
+          "files": 3
+        },
+        {
+          "term": "duplicated logic",
+          "files": 2
+        },
+        {
+          "term": "code reuse",
+          "files": 2
+        },
+        {
+          "term": "repeated code",
+          "files": 1
+        },
+        {
+          "term": "code sharing",
+          "files": 1
+        }
+      ]
+    }
+  ]
+}

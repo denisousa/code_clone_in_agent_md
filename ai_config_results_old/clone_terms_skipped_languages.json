@@ -1,0 +1,616 @@
+{
+  "generated_at": "2026-05-01T19:29:20.944576+00:00",
+  "description": "Repositories removed from clone_terms_report.json because their primary GitHub language is not supported by NiCad.",
+  "supported_languages": {
+    "C": "c",
+    "C#": "cs",
+    "Java": "java",
+    "Python": "py",
+    "PHP": "php",
+    "Ruby": "rb"
+  },
+  "total_skipped": 150,
+  "total_kept": 165,
+  "skipped_repos": [
+    {
+      "repo_name": "1Hive/gardens-v2",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "Comfy-Org/ComfyUI_frontend",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "CopilotKit/CopilotKit",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "DataDog/build-plugins",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "LBALab/lba2-classic-community",
+      "language": "C++"
+    },
+    {
+      "repo_name": "SAP/e-mobility-charging-stations-simulator",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "The-DevOps-Daily/devops-daily",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "WeakAuras/WeakAuras-Companion",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "aam-digital/ndb-core",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "actualbudget/actual",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "adguardteam/adguardvpnextension",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "adguardteam/tsurlfilter",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "alfresco/alfresco-content-app",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "alfresco/alfresco-ng2-components",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "ant-design/ant-design",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "ar-io/ar-io-node",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "assistant-ui/assistant-ui",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "astashov/liftosaur",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "automattic/wp-calypso",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "awslabs/generative-ai-cdk-constructs",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "bfirsh/jsnes",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "bigint/hey",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "bitsoex/bitso-java",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "cadence-workflow/cadence",
+      "language": "Go"
+    },
+    {
+      "repo_name": "cardstack/boxel",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "chakra-ui/ark",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "chakra-ui/zag",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "clappr/clappr",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "clickhouse/clickhouse",
+      "language": "C++"
+    },
+    {
+      "repo_name": "cloudinary/cloudinary-video-player",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "cloudnativelabs/kube-router",
+      "language": "Go"
+    },
+    {
+      "repo_name": "cloudposse/atmos",
+      "language": "Go"
+    },
+    {
+      "repo_name": "cmta/cmtat",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "constructor-io/constructorio-client-javascript",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "continuedev/continue",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "coveo/ui-kit",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "cweill/gotests",
+      "language": "Go"
+    },
+    {
+      "repo_name": "dailydotdev/daily-api",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "dansnow/vue-recaptcha",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "datadog/datadog-agent",
+      "language": "Go"
+    },
+    {
+      "repo_name": "defenseunicorns/uds-core",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "delta-io/delta-kernel-rs",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "dequelabs/axe-core",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "diggerhq/digger",
+      "language": "Go"
+    },
+    {
+      "repo_name": "documenso/documenso",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "doist/typist",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "epam/edp-keycloak-operator",
+      "language": "Go"
+    },
+    {
+      "repo_name": "expensify/app",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "facebook/rocksdb",
+      "language": "C++"
+    },
+    {
+      "repo_name": "facebookincubator/velox",
+      "language": "C++"
+    },
+    {
+      "repo_name": "fastled/fastled",
+      "language": "C++"
+    },
+    {
+      "repo_name": "finos/morphir",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "flightctl/flightctl",
+      "language": "Go"
+    },
+    {
+      "repo_name": "freelensapp/freelens",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "github/branch-deploy",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "gnurou/tagainijisho",
+      "language": "C++"
+    },
+    {
+      "repo_name": "gohypergiant/standard-toolkit",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "google/perfetto",
+      "language": "C++"
+    },
+    {
+      "repo_name": "grafana/plugin-tools",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "grafana/tempo",
+      "language": "Go"
+    },
+    {
+      "repo_name": "grafbase/grafbase",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "hardisgroupcom/vscode-sfdx-hardis",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "hatchet-dev/hatchet",
+      "language": "Go"
+    },
+    {
+      "repo_name": "heroui-inc/heroui",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "hofstadter-io/hof",
+      "language": "Go"
+    },
+    {
+      "repo_name": "homebridge-plugins/homebridge-eufy-security",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "hookdeck/hookdeck-cli",
+      "language": "Go"
+    },
+    {
+      "repo_name": "intentee/paddler",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "iota-uz/iota-sdk",
+      "language": "Go"
+    },
+    {
+      "repo_name": "ispc/ispc",
+      "language": "C++"
+    },
+    {
+      "repo_name": "istio-ecosystem/sail-operator",
+      "language": "Go"
+    },
+    {
+      "repo_name": "just-jeb/angular-builders",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "kubernetes-sigs/kubebuilder",
+      "language": "Go"
+    },
+    {
+      "repo_name": "kubev2v/forklift",
+      "language": "Go"
+    },
+    {
+      "repo_name": "kumahq/kuma",
+      "language": "Go"
+    },
+    {
+      "repo_name": "lablup/backend.ai-webui",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "ledgerhq/ledger-live",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "lingodotdev/lingo.dev",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "livelykernel/lively4-core",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "loft-sh/vcluster",
+      "language": "Go"
+    },
+    {
+      "repo_name": "madfish-solutions/templewallet-extension",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "mercurjs/mercur",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "metaspartan/mactop",
+      "language": "Go"
+    },
+    {
+      "repo_name": "microsoft/fluidframework",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "microsoft/vscode",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "microsoft/windowsappsdk",
+      "language": "C++"
+    },
+    {
+      "repo_name": "milkdown/milkdown",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "minusxai/minusx-metabase",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "mixpanel/mixpanel-react-native",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "module-federation/core",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "moly-ai/moly-ai",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "morethanwords/tweb",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "moxin-org/moly",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "mozilla/fxa",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "neomjs/neo",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "nmeylan/rust-ro",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "nylas/nylas-nodejs",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "ohcnetwork/care_fe",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "okteto/okteto",
+      "language": "Go"
+    },
+    {
+      "repo_name": "openshift-pipelines/pipelines-as-code",
+      "language": "Go"
+    },
+    {
+      "repo_name": "openshift/lightspeed-operator",
+      "language": "Go"
+    },
+    {
+      "repo_name": "openshift/local-storage-operator",
+      "language": "Go"
+    },
+    {
+      "repo_name": "openshift/monitoring-plugin",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "openshift/rosa",
+      "language": "Go"
+    },
+    {
+      "repo_name": "opentensor/subtensor",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "openvinotoolkit/model_server",
+      "language": "C++"
+    },
+    {
+      "repo_name": "openvinotoolkit/openvino",
+      "language": "C++"
+    },
+    {
+      "repo_name": "openvinotoolkit/openvino.genai",
+      "language": "C++"
+    },
+    {
+      "repo_name": "oxen-ai/oxen",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "pingcap/tidb",
+      "language": "Go"
+    },
+    {
+      "repo_name": "pnpm/pnpm",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "poolifier/poolifier",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "radius-project/radius",
+      "language": "Go"
+    },
+    {
+      "repo_name": "raycast/extensions",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "rustdesk/rustdesk",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "rustpython/rustpython",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "rvdbreemen/otgw-firmware",
+      "language": "C++"
+    },
+    {
+      "repo_name": "safe-global/safe-wallet-monorepo",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "saleor/saleor-dashboard",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "sap/open-ux-tools",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "scaffold-eth/scaffold-eth-2",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "schemahero/schemahero",
+      "language": "Go"
+    },
+    {
+      "repo_name": "seasonedcc/remix-forms",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "shelf-nu/shelf.nu",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "shopware/frontends",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "sitecore/jss",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "skalenetwork/skaled",
+      "language": "C++"
+    },
+    {
+      "repo_name": "slackhq/hakana",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "slatedb/slatedb",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "snyk/snyk-ls",
+      "language": "Go"
+    },
+    {
+      "repo_name": "socketdev/socket-sdk-js",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "spiriMirror/libuipc",
+      "language": "C++"
+    },
+    {
+      "repo_name": "stodevx/aao-react-native",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "superdoc-dev/superdoc",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "sushi-labs/sushiswap",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "swimlane/ngx-ui",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "synerise/synerise-design",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "tambo-ai/tambo",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "tensorzero/tensorzero",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "tenstorrent/tt-metal",
+      "language": "C++"
+    },
+    {
+      "repo_name": "tidepool-org/viz",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "tokens-studio/figma-plugin",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "trillek-team/tec",
+      "language": "C++"
+    },
+    {
+      "repo_name": "vincentlaucsb/csv-parser",
+      "language": "C++"
+    },
+    {
+      "repo_name": "wasmerio/wasmer",
+      "language": "Rust"
+    },
+    {
+      "repo_name": "web-infra-dev/midscene",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "web-infra-dev/rslib",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "wprig/wprig",
+      "language": "JavaScript"
+    },
+    {
+      "repo_name": "xh/hoist-react",
+      "language": "TypeScript"
+    },
+    {
+      "repo_name": "zwave-js/zwave-js",
+      "language": "TypeScript"
+    }
+  ]
+}

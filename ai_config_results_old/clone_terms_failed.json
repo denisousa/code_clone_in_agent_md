@@ -1,0 +1,1777 @@
+{
+  "generated_at": "2026-04-30T07:38:21.563083+00:00",
+  "total_failed": 253,
+  "failed": [
+    {
+      "csv": "commands.csv",
+      "repo_name": "hayes/pothos",
+      "file_path": ".claude/commands/add-field-method.md",
+      "raw_url": "https://raw.githubusercontent.com/hayes/pothos/6d385700d9b6464b1e4f051d277c20746e5ec122/.claude/commands/add-field-method.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "commands.csv",
+      "repo_name": "hayes/pothos",
+      "file_path": ".claude/commands/create-test.md",
+      "raw_url": "https://raw.githubusercontent.com/hayes/pothos/6d385700d9b6464b1e4f051d277c20746e5ec122/.claude/commands/create-test.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "commands.csv",
+      "repo_name": "nbonamy/witsy",
+      "file_path": ".claude/commands/dod.md",
+      "raw_url": "https://raw.githubusercontent.com/nbonamy/witsy/e9dc420fb355c6e703a50ad4e23c93174469235d/.claude/commands/dod.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "commands.csv",
+      "repo_name": "nbonamy/witsy",
+      "file_path": ".claude/commands/i18n.md",
+      "raw_url": "https://raw.githubusercontent.com/nbonamy/witsy/bc23348c284466b01e1ec2c3907acd3afae1d5ca/.claude/commands/i18n.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "commands.csv",
+      "repo_name": "nbonamy/witsy",
+      "file_path": ".claude/commands/test.md",
+      "raw_url": "https://raw.githubusercontent.com/nbonamy/witsy/bc23348c284466b01e1ec2c3907acd3afae1d5ca/.claude/commands/test.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "49bitcat/nileswan",
+      "file_path": "firmware/tinyusb/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/49bitcat/nileswan/da21dab358a06106188e2bb06fa71ccd5390fa1a/firmware/tinyusb/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "AztecProtocol/aztec-packages",
+      "file_path": "noir/noir-repo/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/AztecProtocol/aztec-packages/26c2a0f39d72925e1bdb30173c8919a542f74ece/noir/noir-repo/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "Azure/GPT-RAG",
+      "file_path": "infra/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/Azure/GPT-RAG/37b856bc3113814187dc588c3cca5da34e9ca4c7/infra/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "BluePilotDev/bluepilot",
+      "file_path": "tinygrad_repo/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/BluePilotDev/bluepilot/ceb9d94eabc8b4640c7470cf94e86464afaf928f/tinygrad_repo/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "Loki-Astari/ThorsAnvil",
+      "file_path": "third/ThorsSocket/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/Loki-Astari/ThorsAnvil/13a55f276a052155090afd4ce402a2e0e1caf411/third/ThorsSocket/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "Mobile-Artificial-Intelligence/llama_sdk",
+      "file_path": "src/llama_cpp/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/Mobile-Artificial-Intelligence/llama_sdk/568aec82d2fc48341c54cae565768ac75072a31d/src/llama_cpp/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "Mobile-Artificial-Intelligence/llama_sdk",
+      "file_path": "src/llama_cpp/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/Mobile-Artificial-Intelligence/llama_sdk/3595ae5963f1583f53beecf9725c919d309e15da/src/llama_cpp/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ParaState/SafeStakeOperator",
+      "file_path": "lighthouse/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/ParaState/SafeStakeOperator/2ecbb7f90bcf67c635a68eccdaec5e5eadf72b08/lighthouse/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "RobertDaleSmith/USBRetro",
+      "file_path": "src/lib/tinyusb/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/RobertDaleSmith/USBRetro/b18a8fbcd5eacf948b430a996fe54b62da285ccd/src/lib/tinyusb/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "Santroller/Santroller",
+      "file_path": "lib/tinyusb/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/Santroller/Santroller/45e80a1042ea802b74ebe97db350f9da17cb2fe4/lib/tinyusb/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "Santroller/Santroller",
+      "file_path": "lib/tinyusb/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/Santroller/Santroller/f021d5c1e1de5c1b47fcbdd6d8fb1eea70eafe61/lib/tinyusb/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "SpineEventEngine/base-libraries",
+      "file_path": "config/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/SpineEventEngine/base-libraries/5995a5d53ec4b63411f614d16322b2749b353c27/config/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "SpineEventEngine/base-libraries",
+      "file_path": "config/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/SpineEventEngine/base-libraries/5995a5d53ec4b63411f614d16322b2749b353c27/config/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "SpineEventEngine/core-jvm",
+      "file_path": "config/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/SpineEventEngine/core-jvm/5995a5d53ec4b63411f614d16322b2749b353c27/config/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "SpineEventEngine/core-jvm",
+      "file_path": "config/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/SpineEventEngine/core-jvm/5995a5d53ec4b63411f614d16322b2749b353c27/config/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "UKGovernmentBEIS/inspect_ai",
+      "file_path": "src/inspect_ai/_view/ts-mono/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/UKGovernmentBEIS/inspect_ai/b8e7fe7ce63082d2afa4332126705a40a5f5ebac/src/inspect_ai/_view/ts-mono/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "UKGovernmentBEIS/inspect_ai",
+      "file_path": "src/inspect_ai/_view/ts-mono/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/UKGovernmentBEIS/inspect_ai/65b72211c8d8a3df28273cb9c08df9933f0e570c/src/inspect_ai/_view/ts-mono/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "Upsonic/Upsonic",
+      "file_path": "examples/examples/autonomous_agents/devops_telegram_bot/workspace/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/Upsonic/Upsonic/13882f456200db02093ba6dbe36de9b9690136aa/examples/examples/autonomous_agents/devops_telegram_bot/workspace/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "aehrc/pathling",
+      "file_path": "sql-on-fhir/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/aehrc/pathling/8d94605ce8b8698f22f9510e8f8825bc15dca1e7/sql-on-fhir/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "aehrc/pathling",
+      "file_path": "sql-on-fhir/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/aehrc/pathling/8d94605ce8b8698f22f9510e8f8825bc15dca1e7/sql-on-fhir/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "apache/dolphinscheduler",
+      "file_path": ".github/actions/actions-workflow-metrics/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/apache/dolphinscheduler/f223be319156ff919f81a1c80e1848f18f2870ed/.github/actions/actions-workflow-metrics/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "apache/tvm",
+      "file_path": "3rdparty/tvm-ffi/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/apache/tvm/7786133167902a810dd4717fd0e7d39f4c6f7e99/3rdparty/tvm-ffi/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "azure/azure-functions-tooling-feed",
+      "file_path": ".github/instructions/feedV4.instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/azure/azure-functions-tooling-feed/0aeb0ce21d1888f65461d262fcdb156625fc9227/main/.github/instructions/feedV4.instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "briangu/klongpy",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/briangu/klongpy/e286a11d185372027f9535c6654c762171bb5d53/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "canonical/multipass",
+      "file_path": "3rd-party/flutter/dev/a11y_assessments/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/canonical/multipass/2c5957a4f6756175274fdae9c949a72cd3f787cb/3rd-party/flutter/dev/a11y_assessments/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "canonical/multipass",
+      "file_path": "3rd-party/flutter/engine/src/flutter/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/canonical/multipass/230b2e5aa9c0da94c4caca4c12c6eecfcca7e105/3rd-party/flutter/engine/src/flutter/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "canonical/multipass",
+      "file_path": "3rd-party/flutter/engine/src/flutter/impeller/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/canonical/multipass/230b2e5aa9c0da94c4caca4c12c6eecfcca7e105/3rd-party/flutter/engine/src/flutter/impeller/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "canonical/multipass",
+      "file_path": "3rd-party/flutter/engine/src/flutter/lib/web_ui/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/canonical/multipass/bd2f9f407480752a074fcb4edf19af8f90ce9bc6/3rd-party/flutter/engine/src/flutter/lib/web_ui/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "canonical/multipass",
+      "file_path": "3rd-party/flutter/engine/src/flutter/tools/licenses_cpp/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/canonical/multipass/f351ac4ec0c85d78be48f09aafc49ffa8e7f1bd3/3rd-party/flutter/engine/src/flutter/tools/licenses_cpp/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "christofmuc/knobkraft-orm",
+      "file_path": "MidiKraft/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/christofmuc/knobkraft-orm/836cd34a490231230decf9cdff9fe1d5ac2aa123/MidiKraft/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "clickhouse/clickhouse",
+      "file_path": "contrib/rust_vendor/prqlc-0.13.11/tests/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/clickhouse/clickhouse/5b82c3cf13ecdfedcde4abeb6738617077cb2a4a/contrib/rust_vendor/prqlc-0.13.11/tests/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "clickhouse/clickhouse",
+      "file_path": "contrib/rust_vendor/zerocopy-0.8.39/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/clickhouse/clickhouse/57ac9ccd33e809230a1697fe4eb2fa743a332b92/contrib/rust_vendor/zerocopy-0.8.39/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "clickhouse/clickhouse",
+      "file_path": "contrib/rust_vendor/zerocopy-0.8.47/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/clickhouse/clickhouse/5b82c3cf13ecdfedcde4abeb6738617077cb2a4a/contrib/rust_vendor/zerocopy-0.8.47/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "coder/code-server",
+      "file_path": "lib/vscode/.claude/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/coder/code-server/d0201bc5f9b7b49fa34928b6163e08b8097ec86a/lib/vscode/.claude/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "coder/code-server",
+      "file_path": "lib/vscode/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/coder/code-server/ea130eeb3ab7e0f81a81bf137c5161ae5377e47c/lib/vscode/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "coder/code-server",
+      "file_path": "lib/vscode/src/vs/platform/agentHost/common/state/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/coder/code-server/98f15b55eaa9ec24b60cad2905d53f721ad67357/lib/vscode/src/vs/platform/agentHost/common/state/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "coder/code-server",
+      "file_path": "lib/vscode/src/vs/workbench/contrib/imageCarousel/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/coder/code-server/145c1854e758de327fc307453ee05e3d46edd9b9/lib/vscode/src/vs/workbench/contrib/imageCarousel/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "commaai/openpilot",
+      "file_path": "tinygrad_repo/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/commaai/openpilot/ceb9d94eabc8b4640c7470cf94e86464afaf928f/tinygrad_repo/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "commaai/openpilot",
+      "file_path": "tinygrad_repo/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/commaai/openpilot/ea7b149ca59766ea96fd55533985660d9e144482/tinygrad_repo/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "denoland/rusty_v8",
+      "file_path": "v8/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/denoland/rusty_v8/1051e7fcae735f8c937431b76a740d605136f6c3/v8/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "edenai/edenai-apis",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/edenai/edenai-apis/fe1067281c4c54f3ffb551f46bcff582776977e0/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "electric-sql/pglite",
+      "file_path": "postgres-pglite/pglite/other_extensions/pg_textsearch/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/electric-sql/pglite/49fedf1eb1a6627a68416c0e9d10fff9c0af04eb/postgres-pglite/pglite/other_extensions/pg_textsearch/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "electric-sql/pglite",
+      "file_path": "postgres-pglite/pglite/other_extensions/pg_textsearch/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/electric-sql/pglite/5c5147bf2610d786f1bd139951b9fb7fe4ac68fb/postgres-pglite/pglite/other_extensions/pg_textsearch/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "espressif/esp-idf",
+      "file_path": "components/openthread/openthread/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/espressif/esp-idf/523f5015bc058d7ba70b833b113b1aaf31800391/components/openthread/openthread/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "facebookincubator/nimble",
+      "file_path": "velox/.claude/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/facebookincubator/nimble/47aa762ed7c4180e86a9308914d7947365913c4d/velox/.claude/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-elm/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/b36c00c8b2b8481763cfe2606e1c5d8f18e38865/ecosystem/morphir-elm/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-elm/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/b36c00c8b2b8481763cfe2606e1c5d8f18e38865/ecosystem/morphir-elm/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-examples/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/30df212b2b310101f6be859a24e012502972d2a6/ecosystem/morphir-examples/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-examples/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/f30d1e64fa9879c1040bcca1b38b2cfa4519a1da/ecosystem/morphir-examples/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-moonbit/.antigravity/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/c0e2be1be1f6accc0d5ba7c0a96316beb2bd983c/ecosystem/morphir-moonbit/.antigravity/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-moonbit/.claude/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/c0e2be1be1f6accc0d5ba7c0a96316beb2bd983c/ecosystem/morphir-moonbit/.claude/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-moonbit/.codex/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/c0e2be1be1f6accc0d5ba7c0a96316beb2bd983c/ecosystem/morphir-moonbit/.codex/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-python/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/2b59ec87adb96939a4c493818683b22e58d159b0/ecosystem/morphir-python/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "finos/morphir",
+      "file_path": "ecosystem/morphir-rust/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/finos/morphir/5db2e1e57e0fe2855ebba93b5286b21af75ac70c/ecosystem/morphir-rust/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "foundry376/mailspring",
+      "file_path": "mailsync/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/foundry376/mailspring/3b963ed948c58c586cc71b5cdf5be46f9bc4ac43/mailsync/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "getsentry/sentry-godot",
+      "file_path": "modules/gdUnit4/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/getsentry/sentry-godot/cc43930dddc2cb70e7d7e0dd4da7e5797f351a97/modules/gdUnit4/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "getsentry/sentry-unity",
+      "file_path": "modules/sentry-java/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/getsentry/sentry-unity/0d66c0b0232303de347fad2543d483be0125aab5/modules/sentry-java/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "getsentry/sentry-unity",
+      "file_path": "modules/sentry-java/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/getsentry/sentry-unity/0d66c0b0232303de347fad2543d483be0125aab5/modules/sentry-java/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "getsentry/sentry-unity",
+      "file_path": "src/sentry-dotnet/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/getsentry/sentry-unity/cb5edd318675597a5dc323801a7b862efd34c04a/src/sentry-dotnet/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "getsentry/sentry-unity",
+      "file_path": "src/sentry-dotnet/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/getsentry/sentry-unity/2079493ce5baabc6596c42f11b3de20ca1062fd2/src/sentry-dotnet/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "getsentry/sentry-unreal",
+      "file_path": "modules/sentry-java/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/getsentry/sentry-unreal/0d66c0b0232303de347fad2543d483be0125aab5/modules/sentry-java/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "getsentry/sentry-unreal",
+      "file_path": "modules/sentry-java/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/getsentry/sentry-unreal/0d66c0b0232303de347fad2543d483be0125aab5/modules/sentry-java/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "glpi-project/glpi",
+      "file_path": ".github/copilot-instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/glpi-project/glpi/e1481b4fc91d6fd0c74ec3798484b690d947068b/bugfixes/.github/copilot-instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "grafana/beyla",
+      "file_path": ".obi-src/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/grafana/beyla/75c0e83c23a8234ac460f85364b75b20dff4c30a/.obi-src/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "interlink-hq/interLink",
+      "file_path": "helm/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/interlink-hq/interLink/8490a909d4d0af66d0139626e6fc1e0c3332465b/helm/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "interlink-hq/interLink",
+      "file_path": "test/vk-test-set/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/interlink-hq/interLink/cb8236123793c892c869615ea8ab0540927fbdaf/test/vk-test-set/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "jaegertracing/jaeger",
+      "file_path": "jaeger-ui/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/jaegertracing/jaeger/bc867e9433fcb227a4e264d8a2aea9d7b83103e0/jaeger-ui/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "jgraph/drawio-desktop",
+      "file_path": "drawio/src/main/webapp/js/diagramly/vsdx/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/jgraph/drawio-desktop/e1b1ef6f841ea42ac9952e31d2408f43532dbcf5/drawio/src/main/webapp/js/diagramly/vsdx/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "joypad-ai/joypad-os",
+      "file_path": "src/lib/tinyusb/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/joypad-ai/joypad-os/b18a8fbcd5eacf948b430a996fe54b62da285ccd/src/lib/tinyusb/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ledgerhq/app-ethereum",
+      "file_path": ".github/instructions/C.instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/ledgerhq/app-ethereum/c6030ac85834c726295f9005c36caeaa2c5385c7/.github/instructions/C.instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ledgerhq/app-ethereum",
+      "file_path": ".github/instructions/EMBEDDED.instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/ledgerhq/app-ethereum/4bd802768008de4ee992f08a0f04b0915b3d00ab/.github/instructions/EMBEDDED.instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ledgerhq/app-ethereum",
+      "file_path": ".github/instructions/PYTHON.instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/ledgerhq/app-ethereum/c6030ac85834c726295f9005c36caeaa2c5385c7/.github/instructions/PYTHON.instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ledgerhq/app-ethereum",
+      "file_path": ".github/instructions/README.md",
+      "raw_url": "https://raw.githubusercontent.com/ledgerhq/app-ethereum/4bd802768008de4ee992f08a0f04b0915b3d00ab/.github/instructions/README.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ledgerhq/app-ethereum",
+      "file_path": ".github/instructions/REVIEW.instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/ledgerhq/app-ethereum/c6030ac85834c726295f9005c36caeaa2c5385c7/.github/instructions/REVIEW.instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ledgerhq/app-ethereum",
+      "file_path": ".github/instructions/RUST.instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/ledgerhq/app-ethereum/4bd802768008de4ee992f08a0f04b0915b3d00ab/.github/instructions/RUST.instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "leibnitz27/cfr",
+      "file_path": "decompilation-test/test-data/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/leibnitz27/cfr/3a3d8edd90dc1b7553467b7d991b2b2bbd48b547/decompilation-test/test-data/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "lestrrat-go/jwx",
+      "file_path": "AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/lestrrat-go/jwx/06d5f7eaab6274026a309b60d7be6b260c62e020/v3/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "lestrrat-go/jwx",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/lestrrat-go/jwx/b0dd159916faa0fd7904444055119771f994ef32/v3/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "librepcb/librepcb",
+      "file_path": "libs/slint/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/librepcb/librepcb/33053fa878a597ec38118831ff95e5749dae04a8/libs/slint/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "mc1arke/sonarqube-community-branch-plugin",
+      "file_path": "sonarqube-webapp/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/mc1arke/sonarqube-community-branch-plugin/6d5292ae68bbb74df9121aa75052d4dc7c6ca0a8/sonarqube-webapp/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "mc1arke/sonarqube-community-branch-plugin",
+      "file_path": "sonarqube-webapp/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/mc1arke/sonarqube-community-branch-plugin/e5d8d79064bb0aba905cff5fec2a9946d2398bb5/sonarqube-webapp/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "microsoft/go",
+      "file_path": ".github/instructions/patch-consistency.instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/go/4b895171e035e1f20933e83eeaa72ecb65860267/main/.github/instructions/patch-consistency.instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "mlc-ai/relax",
+      "file_path": "3rdparty/tvm-ffi/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/mlc-ai/relax/7786133167902a810dd4717fd0e7d39f4c6f7e99/3rdparty/tvm-ffi/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "modernuo/modernuo",
+      "file_path": ".github/copilot-instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/modernuo/modernuo/e77a566f320e40627074f959f54989f8b5161d16/.github/copilot-instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "mongodb-js/vscode",
+      "file_path": "ext/agent-skills/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/mongodb-js/vscode/76123de46fe24deccd5eaaf47690fc761026fbb9/ext/agent-skills/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "movementlabsxyz/movement",
+      "file_path": "protocol-units/settlement/mcr/contracts/lib/devtools/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/movementlabsxyz/movement/6cb50dfe8403562c3f7cb1bfe197de5164cea0df/protocol-units/settlement/mcr/contracts/lib/devtools/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "movementlabsxyz/movement",
+      "file_path": "protocol-units/settlement/mcr/contracts/lib/devtools/examples/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/movementlabsxyz/movement/6cb50dfe8403562c3f7cb1bfe197de5164cea0df/protocol-units/settlement/mcr/contracts/lib/devtools/examples/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "movementlabsxyz/movement",
+      "file_path": "protocol-units/settlement/mcr/contracts/lib/devtools/packages/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/movementlabsxyz/movement/6cb50dfe8403562c3f7cb1bfe197de5164cea0df/protocol-units/settlement/mcr/contracts/lib/devtools/packages/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "movementlabsxyz/movement",
+      "file_path": "protocol-units/settlement/mcr/contracts/lib/devtools/tests/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/movementlabsxyz/movement/6cb50dfe8403562c3f7cb1bfe197de5164cea0df/protocol-units/settlement/mcr/contracts/lib/devtools/tests/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "mudler/LocalAI",
+      "file_path": "docs/themes/hugo-theme-relearn/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/mudler/LocalAI/34cd86d6e2aeceaf1745b7c236c241f84cd058e3/docs/themes/hugo-theme-relearn/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "nbonamy/witsy",
+      "file_path": ".github/copilot-instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/nbonamy/witsy/c0ff615c733f3c8e8b54140de58c71260c03aac0/.github/copilot-instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "nbonamy/witsy",
+      "file_path": "AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/nbonamy/witsy/c0ff615c733f3c8e8b54140de58c71260c03aac0/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "nbonamy/witsy",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/nbonamy/witsy/c0ff615c733f3c8e8b54140de58c71260c03aac0/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "netivism/neticrm",
+      "file_path": ".claude/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/netivism/neticrm/0a59ab1d424717550470102048b4b7d2ee0581fa/.claude/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "openthread/ot-b91",
+      "file_path": "openthread/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/openthread/ot-b91/523f5015bc058d7ba70b833b113b1aaf31800391/openthread/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "openthread/ot-efr32",
+      "file_path": "openthread/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/openthread/ot-efr32/523f5015bc058d7ba70b833b113b1aaf31800391/openthread/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "openthread/ot-nrf528xx",
+      "file_path": "openthread/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/openthread/ot-nrf528xx/523f5015bc058d7ba70b833b113b1aaf31800391/openthread/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "opsmill/infrahub",
+      "file_path": "python_sdk/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/opsmill/infrahub/56b6e2d86ff77ab179de6880ac4e072869d6a574/python_sdk/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "opsmill/infrahub",
+      "file_path": "python_sdk/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/opsmill/infrahub/5093a3fabf82db95700264c11d1e93ba618c47a4/python_sdk/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "opsmill/infrahub",
+      "file_path": "python_sdk/docs/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/opsmill/infrahub/56b6e2d86ff77ab179de6880ac4e072869d6a574/python_sdk/docs/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "opsmill/infrahub",
+      "file_path": "python_sdk/infrahub_sdk/ctl/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/opsmill/infrahub/5093a3fabf82db95700264c11d1e93ba618c47a4/python_sdk/infrahub_sdk/ctl/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "opsmill/infrahub",
+      "file_path": "python_sdk/infrahub_sdk/pytest_plugin/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/opsmill/infrahub/17cf122935b98d76b51173d94ab9ff7715fcd0b3/python_sdk/infrahub_sdk/pytest_plugin/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "opsmill/infrahub",
+      "file_path": "python_sdk/tests/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/opsmill/infrahub/d748a00ee0d029772d9d0362b71d83225efc8d3f/python_sdk/tests/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "picocomputer/rp6502",
+      "file_path": "src/tinyusb/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/picocomputer/rp6502/70c93adc2f6264015cae597a9abe58ad2e1aaee6/src/tinyusb/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "picocomputer/rp6502",
+      "file_path": "src/tinyusb/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/picocomputer/rp6502/f021d5c1e1de5c1b47fcbdd6d8fb1eea70eafe61/src/tinyusb/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "posit-dev/shinylive",
+      "file_path": "packages/py-shiny/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/posit-dev/shinylive/616fb0fd7bab72023577a58d5149b265b2f3680f/packages/py-shiny/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "potpie-ai/potpie",
+      "file_path": "potpie-ui/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/potpie-ai/potpie/92a0efbe73cc30a66e888f56b1eba8254af8741b/potpie-ui/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "prestodb/presto",
+      "file_path": "presto-native-execution/velox/.claude/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/prestodb/presto/47aa762ed7c4180e86a9308914d7947365913c4d/presto-native-execution/velox/.claude/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-cloudflare",
+      "file_path": "upstream/cmd/migrate/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-cloudflare/14f3c190ed682475be344f8cbb83bbe6b575f90f/upstream/cmd/migrate/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-databricks",
+      "file_path": "upstream/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-databricks/b948d9f7dd83dc7b4332c19f51407f75a447cd27/upstream/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-databricks",
+      "file_path": "upstream/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-databricks/f70a16468e65af387da0afb72b603c0704cb810d/upstream/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-databricks",
+      "file_path": "upstream/exporter/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-databricks/56e5bf52d6289c591dd5a400a070e90be948ac23/upstream/exporter/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-datadog",
+      "file_path": "upstream/.claude/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-datadog/69b94901faa11573cb84da6e7cd6f75344c6c559/upstream/.claude/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-datadog",
+      "file_path": "upstream/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-datadog/69b94901faa11573cb84da6e7cd6f75344c6c559/upstream/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-dotnet",
+      "file_path": "pulumi/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-dotnet/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-dotnet",
+      "file_path": "pulumi/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-dotnet/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-dotnet",
+      "file_path": "pulumi/pkg/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-dotnet/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/pkg/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-dotnet",
+      "file_path": "pulumi/sdk/go/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-dotnet/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/go/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-dotnet",
+      "file_path": "pulumi/sdk/nodejs/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-dotnet/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/nodejs/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-dotnet",
+      "file_path": "pulumi/sdk/python/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-dotnet/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/python/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-java",
+      "file_path": "pulumi/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-java/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-java",
+      "file_path": "pulumi/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-java/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-java",
+      "file_path": "pulumi/pkg/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-java/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/pkg/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-java",
+      "file_path": "pulumi/sdk/go/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-java/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/go/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-java",
+      "file_path": "pulumi/sdk/nodejs/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-java/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/nodejs/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-java",
+      "file_path": "pulumi/sdk/python/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-java/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/python/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-yaml",
+      "file_path": "pulumi/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-yaml/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-yaml",
+      "file_path": "pulumi/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-yaml/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-yaml",
+      "file_path": "pulumi/pkg/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-yaml/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/pkg/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-yaml",
+      "file_path": "pulumi/sdk/go/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-yaml/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/go/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-yaml",
+      "file_path": "pulumi/sdk/nodejs/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-yaml/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/nodejs/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pulumi/pulumi-yaml",
+      "file_path": "pulumi/sdk/python/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pulumi/pulumi-yaml/85e4608ff7dcbd4337c5c27d3a37e08e9f46cdc9/pulumi/sdk/python/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "pyodide/pyodide-recipes",
+      "file_path": "pyodide-build/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/pyodide/pyodide-recipes/3e32c7762a0c9235c50af758f23db3ddee18db32/pyodide-build/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "qt/qtwebengine",
+      "file_path": "src/3rdparty/chromium/agents/extensions/landmines/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/qt/qtwebengine/92193973ffad825f3f86604d8de8b1c15d51a619/src/3rdparty/chromium/agents/extensions/landmines/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "qt/qtwebengine",
+      "file_path": "src/3rdparty/chromium/v8/GEMINI.md",
+      "raw_url": "https://raw.githubusercontent.com/qt/qtwebengine/92193973ffad825f3f86604d8de8b1c15d51a619/src/3rdparty/chromium/v8/GEMINI.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ralfbiedert/interoptopus",
+      "file_path": "website/themes/goyo/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/ralfbiedert/interoptopus/1d26547fd717a8d2b90e144c2fa79524d5fd4899/website/themes/goyo/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "retorquere/zotero-better-bibtex",
+      "file_path": "site/themes/relearn/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/retorquere/zotero-better-bibtex/72320bd911bdb2bc8cb45e6a62de2b061afa3cad/site/themes/relearn/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "rohan-sawhney/fcpw",
+      "file_path": "deps/slang-rhi/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/rohan-sawhney/fcpw/85451580babcec8da0f03b9f43adce0cd7c2468a/deps/slang-rhi/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "rolldown/rolldown",
+      "file_path": "rollup/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/rolldown/rolldown/7f00689ec90e2cafb11c26eefbcac62343c936f6/rollup/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "rust-ethereum/evm",
+      "file_path": "jsontests/res/spectests/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/rust-ethereum/evm/bfe359d3c251daa670eee1e6947cf56c5de7bfb3/jsontests/res/spectests/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "saghul/txiki.js",
+      "file_path": "deps/libwebsockets/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/saghul/txiki.js/c7040a7966723284883bb0b65ebea2a89627df42/deps/libwebsockets/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "samuelclay/newsblur",
+      "file_path": ".claude/skills/ios-simulator-skill/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/samuelclay/newsblur/e21f19fc279456b1e8017c0c6c40e30504731d4a/.claude/skills/ios-simulator-skill/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "scality/arsenal",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/scality/arsenal/4be7ad2be12d7f688e3a4bbdce50e11f46843155/8.2/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "scality/backbeat",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/scality/backbeat/28eee11efadaf72003bde3954f6366e00cec2332/9.3/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "scality/cloudserver",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/scality/cloudserver/9d8021af1093645caf716d7653da950de690190b/9.2/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "scisharp/llamasharp",
+      "file_path": "llama.cpp/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/scisharp/llamasharp/423cf0b26fc0b72ff4bb4656a68a607d38b95fe5/llama.cpp/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "scisharp/llamasharp",
+      "file_path": "llama.cpp/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/scisharp/llamasharp/3595ae5963f1583f53beecf9725c919d309e15da/llama.cpp/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spandigital/presidium",
+      "file_path": "tools/hugo/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/spandigital/presidium/3f9d0ad2b6045849cbafe133cb9fb82ed5f5ee06/tools/hugo/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spandigital/presidium",
+      "file_path": "tools/hugo/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/spandigital/presidium/8f3c066d23f431fb2c53d97ea489e4c28b42bd82/tools/hugo/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spandigital/presidium",
+      "file_path": "tools/hugo/docs/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/spandigital/presidium/30a20122b744bc83589e7f514920a8ec6a887dbf/tools/hugo/docs/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spandigital/presidium",
+      "file_path": "tools/hugo/docs/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/spandigital/presidium/30a20122b744bc83589e7f514920a8ec6a887dbf/tools/hugo/docs/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spineeventengine/base",
+      "file_path": "config/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/spineeventengine/base/5995a5d53ec4b63411f614d16322b2749b353c27/config/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spineeventengine/base",
+      "file_path": "config/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/spineeventengine/base/5995a5d53ec4b63411f614d16322b2749b353c27/config/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spineeventengine/core-java",
+      "file_path": "config/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/spineeventengine/core-java/5995a5d53ec4b63411f614d16322b2749b353c27/config/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "spineeventengine/core-java",
+      "file_path": "config/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/spineeventengine/core-java/5995a5d53ec4b63411f614d16322b2749b353c27/config/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "stack-chan/stack-chan",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/stack-chan/stack-chan/c1c750a97c18346e07fae4731d157da76b66ca48/v1.0/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "synapsecns/sanguine",
+      "file_path": "contrib/opbot/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/synapsecns/sanguine/0c84251e8ef2ab2f6184ea540dac76a9cd981582/contrib/opbot/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "synapsecns/sanguine",
+      "file_path": "contrib/promexporter/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/synapsecns/sanguine/0c84251e8ef2ab2f6184ea540dac76a9cd981582/contrib/promexporter/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "taikoxyz/raiko",
+      "file_path": "gaiko/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/taikoxyz/raiko/d3f1d4bd8e10f5f42e5cd4431eafca7c6e108f0f/gaiko/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "taikoxyz/raiko",
+      "file_path": "gaiko/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/taikoxyz/raiko/d3fe52991a2b7376cc2d130e86d9f37627ba3411/gaiko/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "telepresenceio/telepresence",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/telepresenceio/telepresence/d92eab1af0928cc6c4ac7ad69db470f4e43cf6c1/v2/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "temporalio/sdk-python",
+      "file_path": "temporalio/bridge/sdk-core/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/temporalio/sdk-python/c781a61060d827053af9b82d6aa25a76416e0b84/temporalio/bridge/sdk-core/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "temporalio/sdk-typescript",
+      "file_path": "packages/core-bridge/sdk-core/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/temporalio/sdk-typescript/c781a61060d827053af9b82d6aa25a76416e0b84/packages/core-bridge/sdk-core/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "timeplus-io/proton",
+      "file_path": "contrib/v8-cmake/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/timeplus-io/proton/6dcdf06b88a7a1049a13cfded34d59b0fad89a4c/contrib/v8-cmake/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "trailofbits/mishegos",
+      "file_path": "src/worker/ghidra/sleigh-cmake/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/trailofbits/mishegos/1b2041b6aaf5a655604e19502287ef0d13cf6ac3/src/worker/ghidra/sleigh-cmake/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "trimble-oss/modus-web-components",
+      "file_path": ".github/copilot-instructions.md",
+      "raw_url": "https://raw.githubusercontent.com/trimble-oss/modus-web-components/d3780e3be72979bc07fc07f2dff03517b26d519d/.github/copilot-instructions.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ttsim-dev/gettsim",
+      "file_path": ".ai-instructions/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/ttsim-dev/gettsim/3ec6e061c16da75048aeefd17e01e2149fb15004/.ai-instructions/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "ttsim-dev/gettsim",
+      "file_path": ".ai-instructions/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/ttsim-dev/gettsim/3ec6e061c16da75048aeefd17e01e2149fb15004/.ai-instructions/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "typedb/typedb-studio",
+      "file_path": "typedb-web/schema/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/typedb/typedb-studio/6a8e7208d4f6242f11196f5d23d5efd858a15140/typedb-web/schema/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "typedb/typedb-studio",
+      "file_path": "typedb-web/schema/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/typedb/typedb-studio/6a8e7208d4f6242f11196f5d23d5efd858a15140/typedb-web/schema/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "unmanic/unmanic",
+      "file_path": "unmanic/webserver/frontend/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/unmanic/unmanic/4a8ab7321841525bd19c10a8e5f36b7c897208ac/unmanic/webserver/frontend/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "utooland/utoo",
+      "file_path": "next.js/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/utooland/utoo/de03508d2bd834131806bf045fee1cdb04653106/next.js/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "utooland/utoo",
+      "file_path": "next.js/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/utooland/utoo/8fd79ff42e8b1ac82db104fca7a38dfa9cfa902e/next.js/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "vnotex/vnote",
+      "file_path": "libs/vtextedit/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/vnotex/vnote/cbfece71a8dea6c761c537ccc71018b6debe560d/libs/vtextedit/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/780dcaf7aa86f14224a66994c2fe7605c54a0e2d/streamlit/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/59b2cf168b88c94aac8de86588e5cab050c41463/streamlit/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/e2e_playwright/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/c51197441c6ad3efaa18b7303c8c1382411a1272/streamlit/e2e_playwright/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/e2e_playwright/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/59b2cf168b88c94aac8de86588e5cab050c41463/streamlit/e2e_playwright/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/frontend/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/02a73c6a3911da5c57aef1424b15f127db4f0e44/streamlit/frontend/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/frontend/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/59b2cf168b88c94aac8de86588e5cab050c41463/streamlit/frontend/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/lib/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/18736963edb11d6304d049e5d8aae9f65d9fd3a5/streamlit/lib/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/lib/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/59b2cf168b88c94aac8de86588e5cab050c41463/streamlit/lib/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/lib/streamlit/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/02a73c6a3911da5c57aef1424b15f127db4f0e44/streamlit/lib/streamlit/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/lib/streamlit/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/59b2cf168b88c94aac8de86588e5cab050c41463/streamlit/lib/streamlit/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/lib/tests/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/02a73c6a3911da5c57aef1424b15f127db4f0e44/streamlit/lib/tests/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/lib/tests/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/59b2cf168b88c94aac8de86588e5cab050c41463/streamlit/lib/tests/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/proto/streamlit/proto/AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/33637a6ff276b04de251292c4bae802cfa015132/streamlit/proto/streamlit/proto/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "whitphx/stlite",
+      "file_path": "streamlit/proto/streamlit/proto/CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/whitphx/stlite/59b2cf168b88c94aac8de86588e5cab050c41463/streamlit/proto/streamlit/proto/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "woocommerce/woocommerce-paypal-payments",
+      "file_path": "AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/woocommerce/woocommerce-paypal-payments/a891d2f378ae41f4b47412b97f09feb5ffee7310/develop/AGENTS.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "context_files.csv",
+      "repo_name": "woocommerce/woocommerce-paypal-payments",
+      "file_path": "CLAUDE.md",
+      "raw_url": "https://raw.githubusercontent.com/woocommerce/woocommerce-paypal-payments/ee8ba244e017430bb2d5945922aa71e71b1c1c1b/develop/CLAUDE.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "DataRecce/recce",
+      "file_path": ".claude/skills/address-dependabot/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/DataRecce/recce/29020e4d6d146ced5a4fc09cb5e8a75d2dd74e3c/.claude/skills/address-dependabot/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "TiendaNube/nimbus-design-system",
+      "file_path": ".cursor/skills/fix-tests/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/TiendaNube/nimbus-design-system/e715d3e275b250720803b812e3e27659e4555578/.cursor/skills/fix-tests/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "bitfaster/bitfaster.caching",
+      "file_path": ".claude/skills/bench-fast/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/bitfaster/bitfaster.caching/8ec227c0c815e8d721ea83cd08319ada1fc42f03/.claude/skills/bench-fast/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "bitfaster/bitfaster.caching",
+      "file_path": ".claude/skills/dump-asm/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/bitfaster/bitfaster.caching/8ec227c0c815e8d721ea83cd08319ada1fc42f03/.claude/skills/dump-asm/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "bitfaster/bitfaster.caching",
+      "file_path": ".claude/skills/split-asm/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/bitfaster/bitfaster.caching/8ec227c0c815e8d721ea83cd08319ada1fc42f03/.claude/skills/split-asm/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "brave/brave-core",
+      "file_path": ".claude/skills/check-milestones/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/brave/brave-core/af22939d2e710bbff4a38ccda228ad04dab5b7ae/.claude/skills/check-milestones/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "hyperlane-xyz/hyperlane-monorepo",
+      "file_path": ".claude/skills/hyperlane-utils/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/hyperlane-xyz/hyperlane-monorepo/63100a2169675a5b9167e2fa47ebfef21da22a58/.claude/skills/hyperlane-utils/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "hyperlane-xyz/hyperlane-monorepo",
+      "file_path": ".claude/skills/warp-route-check/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/hyperlane-xyz/hyperlane-monorepo/dc8ac8c4c07220231eb0201da9e8a2f5d44ba482/.claude/skills/warp-route-check/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "iota-uz/iota-sdk",
+      "file_path": ".claude/skills/database-connection/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/iota-uz/iota-sdk/63b2db208f38ac1c5926c4338141cedf3be65574/.claude/skills/database-connection/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "iota-uz/iota-sdk",
+      "file_path": ".claude/skills/e2e-testing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/iota-uz/iota-sdk/934e7b7a99d60584b36e3d95903fa3082103a5be/.claude/skills/e2e-testing/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "iota-uz/iota-sdk",
+      "file_path": ".claude/skills/railway-cli/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/iota-uz/iota-sdk/63b2db208f38ac1c5926c4338141cedf3be65574/.claude/skills/railway-cli/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "lidofinance/state-mate",
+      "file_path": ".claude/skills/state-mate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/lidofinance/state-mate/3c147434f5f8c8371dd9f5dbf71b51c40edf05b4/.claude/skills/state-mate/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "mparticle/mparticle-web-sdk",
+      "file_path": ".claude/skills/debug-api/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mparticle/mparticle-web-sdk/6ecd6e0884d0073f369db6b539b2fd612d8d1837/.claude/skills/debug-api/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "mparticle/mparticle-web-sdk",
+      "file_path": ".claude/skills/debug-build/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mparticle/mparticle-web-sdk/6ecd6e0884d0073f369db6b539b2fd612d8d1837/.claude/skills/debug-build/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "mparticle/mparticle-web-sdk",
+      "file_path": ".claude/skills/debug-jest/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mparticle/mparticle-web-sdk/6ecd6e0884d0073f369db6b539b2fd612d8d1837/.claude/skills/debug-jest/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "mparticle/mparticle-web-sdk",
+      "file_path": ".claude/skills/handoff/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mparticle/mparticle-web-sdk/6ecd6e0884d0073f369db6b539b2fd612d8d1837/.claude/skills/handoff/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "mparticle/mparticle-web-sdk",
+      "file_path": ".claude/skills/kickstart/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mparticle/mparticle-web-sdk/6ecd6e0884d0073f369db6b539b2fd612d8d1837/.claude/skills/kickstart/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "mparticle/mparticle-web-sdk",
+      "file_path": ".claude/skills/session-recap/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mparticle/mparticle-web-sdk/6ecd6e0884d0073f369db6b539b2fd612d8d1837/.claude/skills/session-recap/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx",
+      "file_path": ".gemini/skills/ci-monitor/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx/de67da4bc6a0f910e5d1b245d71d019bbd354d8f/.gemini/skills/ci-monitor/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx",
+      "file_path": ".gemini/skills/nx-generate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx/de67da4bc6a0f910e5d1b245d71d019bbd354d8f/.gemini/skills/nx-generate/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx",
+      "file_path": ".gemini/skills/nx-plugins/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx/de67da4bc6a0f910e5d1b245d71d019bbd354d8f/.gemini/skills/nx-plugins/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx",
+      "file_path": ".gemini/skills/nx-run-tasks/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx/de67da4bc6a0f910e5d1b245d71d019bbd354d8f/.gemini/skills/nx-run-tasks/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx",
+      "file_path": ".gemini/skills/nx-workspace/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx/de67da4bc6a0f910e5d1b245d71d019bbd354d8f/.gemini/skills/nx-workspace/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx-console",
+      "file_path": ".gemini/skills/link-workspace-packages/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx-console/845183170735ca3cbf972100c699b30151a22b10/.gemini/skills/link-workspace-packages/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx-console",
+      "file_path": ".gemini/skills/monitor-ci/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx-console/845183170735ca3cbf972100c699b30151a22b10/.gemini/skills/monitor-ci/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx-console",
+      "file_path": ".gemini/skills/nx-generate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx-console/845183170735ca3cbf972100c699b30151a22b10/.gemini/skills/nx-generate/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx-console",
+      "file_path": ".gemini/skills/nx-plugins/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx-console/5581d361bfceef6266bf68847b8fa444715fe121/.gemini/skills/nx-plugins/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx-console",
+      "file_path": ".gemini/skills/nx-run-tasks/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx-console/5581d361bfceef6266bf68847b8fa444715fe121/.gemini/skills/nx-run-tasks/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "nrwl/nx-console",
+      "file_path": ".gemini/skills/nx-workspace/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/nrwl/nx-console/845183170735ca3cbf972100c699b30151a22b10/.gemini/skills/nx-workspace/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "pancakeswap/pancake-frontend",
+      "file_path": ".cursor/skills/browser-testing-automation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/pancakeswap/pancake-frontend/ecbf6f6f10adf57e7762ed410c45d0da1dae5411/.cursor/skills/browser-testing-automation/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "promptfoo/promptfoo",
+      "file_path": ".claude/skills/redteam-plugin-development/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/promptfoo/promptfoo/3e30cb0383991990177f3858cc19022334167974/.claude/skills/redteam-plugin-development/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "promptfoo/promptfoo",
+      "file_path": ".claude/skills/search-params/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/promptfoo/promptfoo/1866835541b285227dc556957c1ddb89f5e458eb/.claude/skills/search-params/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "ran-isenberg/aws-lambda-handler-cookbook",
+      "file_path": ".github/skills/ai-sdlc/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/ran-isenberg/aws-lambda-handler-cookbook/0fc4e2859bfb864f4a91e8157d3dd4b0295e1cae/.github/skills/ai-sdlc/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "scality/arsenal",
+      "file_path": ".claude/skills/review-pr/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/scality/arsenal/4be7ad2be12d7f688e3a4bbdce50e11f46843155/8.2/.claude/skills/review-pr/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "scality/backbeat",
+      "file_path": ".claude/skills/review-pr/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/scality/backbeat/28eee11efadaf72003bde3954f6366e00cec2332/9.3/.claude/skills/review-pr/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "scality/cloudserver",
+      "file_path": ".claude/skills/review-pr/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/scality/cloudserver/9d8021af1093645caf716d7653da950de690190b/9.2/.claude/skills/review-pr/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "shannah/jdeploy",
+      "file_path": ".claude/skills/test-authenticode-signing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/shannah/jdeploy/9ddd5ec70e8a3447cae0a337c609848e6e64949c/.claude/skills/test-authenticode-signing/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "shannah/jdeploy",
+      "file_path": ".claude/skills/test-bundle-publishing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/shannah/jdeploy/4eb55ae6d20edf5bf339a1b66e2dc1e70e6f0b85/.claude/skills/test-bundle-publishing/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "shannah/jdeploy",
+      "file_path": ".claude/skills/test-full-publishing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/shannah/jdeploy/aa5011096519b4d7064388917541a1281e8feeec/.claude/skills/test-full-publishing/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "shannah/jdeploy",
+      "file_path": ".claude/skills/test-mac-codesigning/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/shannah/jdeploy/aa5011096519b4d7064388917541a1281e8feeec/.claude/skills/test-mac-codesigning/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "shapeshift/web",
+      "file_path": ".claude/skills/chain-integration-crew/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/shapeshift/web/4b625a5278f0f32ae108f1c0650842dfbd6f8734/.claude/skills/chain-integration-crew/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "srbhr/Resume-Matcher",
+      "file_path": ".claude/skills/design-principles/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/srbhr/Resume-Matcher/23ff33debc34817b4f0522443421ae3c18938a6e/.claude/skills/design-principles/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "tsparticles/tsparticles",
+      "file_path": ".gemini/skills/link-workspace-packages/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/tsparticles/tsparticles/9b9b7d0355aa53eb37fe25ac04731315740faf21/.gemini/skills/link-workspace-packages/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "tsparticles/tsparticles",
+      "file_path": ".gemini/skills/monitor-ci/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/tsparticles/tsparticles/9b9b7d0355aa53eb37fe25ac04731315740faf21/.gemini/skills/monitor-ci/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "tsparticles/tsparticles",
+      "file_path": ".gemini/skills/nx-generate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/tsparticles/tsparticles/9b9b7d0355aa53eb37fe25ac04731315740faf21/.gemini/skills/nx-generate/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "tsparticles/tsparticles",
+      "file_path": ".gemini/skills/nx-import/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/tsparticles/tsparticles/4ca9d7662dc0db671cbfc73108edcc60368c83ad/.gemini/skills/nx-import/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "tsparticles/tsparticles",
+      "file_path": ".gemini/skills/nx-plugins/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/tsparticles/tsparticles/9b9b7d0355aa53eb37fe25ac04731315740faf21/.gemini/skills/nx-plugins/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "tsparticles/tsparticles",
+      "file_path": ".gemini/skills/nx-run-tasks/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/tsparticles/tsparticles/9b9b7d0355aa53eb37fe25ac04731315740faf21/.gemini/skills/nx-run-tasks/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "tsparticles/tsparticles",
+      "file_path": ".gemini/skills/nx-workspace/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/tsparticles/tsparticles/3346690bbbf6601dffe4821c162adbe77d30276b/.gemini/skills/nx-workspace/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "skills.csv",
+      "repo_name": "zenml-io/zenml",
+      "file_path": ".claude/skills/zenml-backport/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/zenml-io/zenml/7e54d8f1cde833e25b99052d1c1f36886a3d64ed/.claude/skills/zenml-backport/SKILL.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "kelvintegelaar/cipp",
+      "file_path": ".github/agents/CIPP-Alert-Agent.md",
+      "raw_url": "https://raw.githubusercontent.com/kelvintegelaar/cipp/e6ace396e3998121f316761b548246166ab3809f/.github/agents/CIPP-Alert-Agent.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "nbonamy/witsy",
+      "file_path": ".claude/agents/code-deduplicator.md",
+      "raw_url": "https://raw.githubusercontent.com/nbonamy/witsy/535988908b0624679b03ec16d1c02f027dd498e8/.claude/agents/code-deduplicator.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "netivism/neticrm",
+      "file_path": ".claude/agents/database-agent.md",
+      "raw_url": "https://raw.githubusercontent.com/netivism/neticrm/a2b83ccd9a05aab5e4c26f8ce570649b36141303/.claude/agents/database-agent.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "netivism/neticrm",
+      "file_path": ".claude/agents/drupal-module-developer.md",
+      "raw_url": "https://raw.githubusercontent.com/netivism/neticrm/a2b83ccd9a05aab5e4c26f8ce570649b36141303/.claude/agents/drupal-module-developer.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "netivism/neticrm",
+      "file_path": ".claude/agents/frontend-engineer.md",
+      "raw_url": "https://raw.githubusercontent.com/netivism/neticrm/a2b83ccd9a05aab5e4c26f8ce570649b36141303/.claude/agents/frontend-engineer.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "netivism/neticrm",
+      "file_path": ".claude/agents/php-engineer.md",
+      "raw_url": "https://raw.githubusercontent.com/netivism/neticrm/a2b83ccd9a05aab5e4c26f8ce570649b36141303/.claude/agents/php-engineer.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "netivism/neticrm",
+      "file_path": ".claude/agents/structor-planner.md",
+      "raw_url": "https://raw.githubusercontent.com/netivism/neticrm/a2b83ccd9a05aab5e4c26f8ce570649b36141303/.claude/agents/structor-planner.md",
+      "reason": "fetch_error"
+    },
+    {
+      "csv": "subagents.csv",
+      "repo_name": "netivism/neticrm",
+      "file_path": ".claude/agents/translation-extractor.md",
+      "raw_url": "https://raw.githubusercontent.com/netivism/neticrm/a2b83ccd9a05aab5e4c26f8ce570649b36141303/.claude/agents/translation-extractor.md",
+      "reason": "fetch_error"
+    }
+  ]
+}

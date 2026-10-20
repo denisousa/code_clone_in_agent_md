@@ -18,8 +18,11 @@ import csv
 import json
 import os
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from functools import lru_cache
 from pathlib import Path
 from time import perf_counter
 from typing import NamedTuple
@@ -34,12 +37,16 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 
 AI_CONFIG_DIR = Path("ai_config")
+REPOS_CSV = Path("ai_config/repos.csv")
 
 # Maps each CSV filename to the column that holds the file path.
 CSV_SOURCES: dict[str, str] = {
     "commands.csv":      "command",
     "context_files.csv": "context_file",
+    "hooks.csv":         "hook",
     "mcp.csv":           "mcp",
+    "rules.csv":         "rule",
+    "settings.csv":      "settings",
     "skills.csv":        "skills.md",
     "subagents.csv":     "subagent",
 }
@@ -53,8 +60,7 @@ CLONE_TERMS: list[str] = [
     "duplicate code",
     "duplicated code",
     "code duplication",
-    "code redundancy",
-    "logic duplication",    
+    "logic duplication",
     "duplicated logic",
     "copy-paste",
     "copy-pasted",
@@ -64,18 +70,15 @@ CLONE_TERMS: list[str] = [
     "reused code",
     "code reuse",
     "code sharing",
-    "code clone",
-    "code cloning",
-    "library reuse",
-    "API reuse"
 ]
 
 # Adicionar resue and code reused
 
 CLEAN_TERMS: list[str] = CLONE_TERMS
 
+MAX_WORKERS = 20            # concurrent HTTP fetch threads
 SNIPPET_CONTEXT = 80        # characters of context around each match
-DELAY_BETWEEN_REQUESTS = 1  # seconds between GitHub API calls
+DELAY_BETWEEN_REQUESTS = 0  # no artificial delay; parallelism + auto rate-limit handles pacing
 
 
 # ---------------------------------------------------------------------------
@@ -119,9 +122,24 @@ class FailedRecord(NamedTuple):
 
 
 # ---------------------------------------------------------------------------
+# Step 0 – Load engineered repos
+# ---------------------------------------------------------------------------
+
+def load_engineered_repos(repos_path: Path) -> set[str]:
+    """Return the set of repo_names where engineered_project is True."""
+    engineered: set[str] = set()
+    rows = load_csv(repos_path)
+    for row in rows:
+        if row.get("engineered_project", "").strip().lower() == "true":
+            engineered.add(row.get("repo_name", "").strip())
+    return engineered
+
+
+# ---------------------------------------------------------------------------
 # Step 1 – Load a CSV file
 # ---------------------------------------------------------------------------
 
+@lru_cache(maxsize=None)
 def load_csv(csv_path: Path) -> list[dict]:
     """Read all rows from a CSV file and return them as a list of dicts."""
     csv.field_size_limit(10 * 1024 * 1024)  # 10 MB — handles large commit messages
@@ -137,12 +155,17 @@ def load_csv(csv_path: Path) -> list[dict]:
 # Step 2 – Filter .md records
 # ---------------------------------------------------------------------------
 
-def filter_records(rows: list[dict], file_col: str) -> list[FileRecord]:
-    """Keep rows whose file-path column is non-empty (any extension)."""
+def filter_records(
+    rows: list[dict],
+    file_col: str,
+    engineered_repos: set[str],
+) -> list[FileRecord]:
+    """Keep rows whose file-path column is non-empty and whose repo is an engineered project."""
     records: list[FileRecord] = []
     for row in rows:
         file_path: str = row.get(file_col, "").strip()
-        if file_path:
+        repo_name: str = row.get("repo_name", "").strip()
+        if file_path and repo_name in engineered_repos:
             records.append(
                 FileRecord(
                     repo_name=row.get("repo_name", "").strip(),
@@ -204,11 +227,16 @@ def build_headers() -> dict:
     return headers
 
 
+_rate_limit_lock = threading.Lock()
+
+
 def handle_rate_limit(response: requests.Response) -> None:
     reset_ts = int(response.headers.get("X-RateLimit-Reset", time.time() + 60))
-    wait = max(reset_ts - time.time(), 0) + 5
-    print(f"  [RATE LIMIT] Waiting {wait:.0f}s before retrying...")
-    time.sleep(wait)
+    with _rate_limit_lock:
+        wait = max(reset_ts - time.time(), 0) + 5
+        if wait > 0:
+            print(f"  [RATE LIMIT] Waiting {wait:.0f}s before retrying...")
+            time.sleep(wait)
 
 
 def fetch_raw_content(raw_url: str, headers: dict) -> str | None:
@@ -265,7 +293,19 @@ def apply_regex(text: str) -> list[TermHit]:
 # Step 6 – Process a single CSV source
 # ---------------------------------------------------------------------------
 
-def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
+def _fetch_one(
+    record: FileRecord,
+    headers: dict,
+) -> tuple[FileRecord, str, str | None]:
+    """Fetch raw content for one record. Returns (record, raw_url, content)."""
+    raw_url = github_link_to_raw_url(record.github_link, record.commit_sha)
+    if not raw_url:
+        return record, "", None
+    content = fetch_raw_content(raw_url, headers)
+    return record, raw_url, content
+
+
+def process_csv(csv_name: str, file_col: str, headers: dict, engineered_repos: set[str]) -> dict:
     """
     Load, filter, fetch, and search one CSV file.
     Returns a dict with all data needed for both output files.
@@ -278,47 +318,49 @@ def process_csv(csv_name: str, file_col: str, headers: dict) -> dict:
     rows = load_csv(csv_path)
     print(f"  Total records: {len(rows)}")
 
-    records = filter_records(rows, file_col)
+    records = filter_records(rows, file_col, engineered_repos)
     print(f"  Processable records: {len(records)}")
 
     results: list[MatchResult] = []
     failed: list[FailedRecord] = []
+    n_records = len(records)
+    completed = 0
 
-    for i, record in enumerate(records, start=1):
-        raw_url = github_link_to_raw_url(record.github_link, record.commit_sha)
-        if not raw_url:
-            print(f"  [{i}/{len(records)}] SKIP (no github_link): {record.file_path}")
-            failed.append(FailedRecord(
-                csv=csv_name,
-                repo_name=record.repo_name,
-                file_path=record.file_path,
-                raw_url="",
-                reason="no_github_link",
-            ))
-            continue
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {executor.submit(_fetch_one, record, headers): record for record in records}
+        for future in as_completed(futures):
+            completed += 1
+            record, raw_url, content = future.result()
 
-        print(f"  [{i}/{len(records)}] {record.repo_name} / {record.file_path}")
+            if not raw_url:
+                print(f"  [{completed}/{n_records}] SKIP (no github_link): {record.file_path}")
+                failed.append(FailedRecord(
+                    csv=csv_name,
+                    repo_name=record.repo_name,
+                    file_path=record.file_path,
+                    raw_url="",
+                    reason="no_github_link",
+                ))
+                continue
 
-        content = fetch_raw_content(raw_url, headers)
-        if content is None:
-            print(f"    → Could not fetch content.")
-            failed.append(FailedRecord(
-                csv=csv_name,
-                repo_name=record.repo_name,
-                file_path=record.file_path,
-                raw_url=raw_url,
-                reason="fetch_error",
-            ))
-            time.sleep(DELAY_BETWEEN_REQUESTS)
-            continue
+            print(f"  [{completed}/{n_records}] {record.repo_name} / {record.file_path}")
 
-        hits = apply_regex(content)
-        if hits:
-            total = sum(h.count for h in hits)
-            results.append(MatchResult(record=record, hits=hits, total_matches=total, raw_url=raw_url))
-            print(f"    → {len(hits)} term(s) matched, {total} total occurrence(s).")
+            if content is None:
+                print(f"    → Could not fetch content.")
+                failed.append(FailedRecord(
+                    csv=csv_name,
+                    repo_name=record.repo_name,
+                    file_path=record.file_path,
+                    raw_url=raw_url,
+                    reason="fetch_error",
+                ))
+                continue
 
-        time.sleep(DELAY_BETWEEN_REQUESTS)
+            hits = apply_regex(content)
+            if hits:
+                n_hits = sum(h.count for h in hits)
+                results.append(MatchResult(record=record, hits=hits, total_matches=n_hits, raw_url=raw_url))
+                print(f"    → {len(hits)} term(s) matched, {n_hits} total occurrence(s).")
 
     return {
         "csv": csv_name,
@@ -483,9 +525,9 @@ def save_analysis(csv_data: list[dict], analysis_path: Path) -> None:
 # Startup report
 # ---------------------------------------------------------------------------
 
-def print_startup_report() -> int:
+def print_startup_report(engineered_repos: set[str]) -> int:
     """
-    Print a pre-run summary: .md entry count per CSV and total,
+    Print a pre-run summary: entry count per CSV (engineered repos only) and total,
     plus an estimated runtime at 1 s/entry.
     Returns the total number of entries to be processed.
     """
@@ -498,6 +540,7 @@ def print_startup_report() -> int:
         count = sum(
             1 for row in rows
             if row.get(file_col, "").strip()
+            and row.get("repo_name", "").strip() in engineered_repos
         )
         rows_data.append((csv_name, count))
 
@@ -529,7 +572,10 @@ def print_startup_report() -> int:
 def main() -> None:
     start = perf_counter()
 
-    print_startup_report()
+    engineered_repos = load_engineered_repos(REPOS_CSV)
+    print(f"  Engineered repos loaded: {len(engineered_repos):,} from {REPOS_CSV}")
+
+    print_startup_report(engineered_repos)
 
     headers = build_headers()
 
@@ -537,7 +583,7 @@ def main() -> None:
 
     csv_data: list[dict] = []
     for csv_name, file_col in CSV_SOURCES.items():
-        entry = process_csv(csv_name, file_col, headers)
+        entry = process_csv(csv_name, file_col, headers, engineered_repos)
         csv_data.append(entry)
 
     print(f"\n{'='*60}")
